@@ -1,0 +1,106 @@
+/*
+	General styles
+*/
+@import url(http://fonts.googleapis.com/css?family=Gravitas+One|Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color:rgba(255,255,255,1.00);
+	font-size: 13px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body, html {
+	height: 100%
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Gravitas One', cursive;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 20px;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #2e639e;
+}
+a:hover {
+	text-decoration: underline;
+}
+.touchonly {
+	display: none;
+}
+
+.tituloAtras {
+	
+	background-color: #d39683;
+	padding-top: 50px;
+	padding-right: 20px;
+	padding-left: 50px;
+	padding-bottom: 200px;
+	color: #836153;
+	
+}
+
+.texto {
+
+	padding-top: 25px;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 25px;
+	text-align:justify;
+}
+
+.texto p{
+	padding:2px;
+	color:#525252;
+	font-size:16px;
+	}
+	
+	
+html.touch .touchonly {
+	display: block;
+}
+.noselect * {
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+}
+.doselect * {
+	user-select: auto;
+	-webkit-user-select: auto;
+	-khtml-user-select: auto;
+	-moz-user-select: auto;
+	-o-user-select: auto;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}.fototitulo {
+	float: right;
+}
+.ultimo {
+	margin-bottom: 100 px;
+}
+
