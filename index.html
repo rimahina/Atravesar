@@ -12,7 +12,6 @@
 <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
 <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
 <script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
 
 </head>
 <body>
@@ -89,13 +88,18 @@
                 <p>Existe una pieza de ART+COM, Duality en la que al pasar por un puente generas ondas en el agua que atraviesa, como si anduvieses por el agua, nosotras buscábamos ese mismo dejar huella por donde realmente no hemos estado. Y una interacción divertida con el espacio, como la que genera Human Allergy de Hugo Martínez Torno al estornudar cuando alguien pasa por delante. Con un objeto familiar, lo bueno del avión de papel es que raro es encontrar a alguien que nunca haya hecho alguno, y se dan muchos los casos de personas que tienen una forma peculiar de hacerlos, que identifican con sigo mismas.</p>
                 </div>
 
+				
                 <div id="parallax4" class="parallaxParent">
                     <div style="background-image: url(img/4.JPG);background-size:cover"></div>
                 </div>
                 
+                <div id="ultimafoto"></div>  
                 <div class="texto" style="margin-bottom:100px;">
                 <p>Al principio dudamos si la gente que pasara por allí se pararía a leer las instrucciones de nuestro juego, o si se pararía a lanzar un avión.  Pero durante el montaje no fueron pocos los visitantes que al ver el marco allí y el montón de papeles, ya intentaron acertar en la diana. Una vez montado lo probamos con algunos miembros del personal del museo, que se mostró muy participativo. Y los pocos aviones que quedaron como rastro de aquellas pruebas resultaron ser suficiente como instrucciones para la gente que llego a la inauguración. Antes y mientras explicábamos la pieza, ya había gente lanzando aviones, y pude ir unas cuantas veces más y comprobar que cada vez el suelo estaba más blanco, incluso había gente que firmaba el avión antes de lanzarlo.</p>
-                <center><img src="img/palacio.png"/></center>
+                
+                
+              	 <div id="final"><center><img src="img/palacio.png"/></center></div>
+                 
                 </div>
                 </section>
 			</div>
@@ -108,8 +112,8 @@ var controller2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 
 
 //primer avión
 	          
-TweenMax.set("#avion", {left: "-=40%", top: "+=30"});				
-var tween = new TweenMax.to("#avion", 3, {top: "+=300",left: "+=80%",ease:Circ.easeOut});	
+TweenMax.set("#avion", {left: "-=40%", top: "+=30", opacity:0});				
+var tween = new TweenMax.to("#avion", 3, {top: "+=300",left: "+=80%",opacity:1,ease:Circ.easeOut});	
 																			
 var scene = new ScrollMagic.Scene({triggerElement: "#lanzaavion1"})
 	.setTween(tween)
@@ -125,13 +129,22 @@ var scene = new ScrollMagic.Scene({triggerElement: "#lanzaavion1"})
 
 //primer avión
 	          
-TweenMax.set("#avion2", {left: "+=40%", top: "-=30"});				
-var tween = new TweenMax.to("#avion2", 3, {top: "-=300",left: "-=80%",ease:Circ.easeOut});	
+TweenMax.set("#avion2", {left: "+=40%", top: "-=30", opacity:0});				
+var tween = new TweenMax.to("#avion2", 3, {top: "-=300",left: "-=80%", opacity:1,ease:Circ.easeOut});	
 																			
 var scene = new ScrollMagic.Scene({triggerElement: "#lanzaavion2"})
 	.setTween(tween)
 	.addTo(controller);
 	
+	
+//ultima foto
+
+TweenMax.set("#final", {opacity:0});				
+var tween = new TweenMax.to("#final", 3, {opacity:1,ease:Circ.easeOut});	
+																			
+var scene = new ScrollMagic.Scene({triggerElement: "#ultimafoto"})
+	.setTween(tween)
+	.addTo(controller);
 	
 //Fotos borrosas
 	// build scenes
@@ -150,6 +163,6 @@ var scene = new ScrollMagic.Scene({triggerElement: "#lanzaavion2"})
 	new ScrollMagic.Scene({triggerElement: "#parallax4"})
 					.setTween("#parallax4 > div", {y: "100%", ease: Linear.easeNone})
 					.addTo(controller2);
-					</script>
+</script>
 </body>
 </html>
