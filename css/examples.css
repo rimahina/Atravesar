@@ -801,6 +801,22 @@ a.viewsource:before {
 	overflow: visible;
 }
 
+.demo .parallaxParent {
+                        height: 100vh;
+                        overflow: hidden;
+                    }
+.demo .parallaxParent > * {
+                        height: 200%;
+                        width:100%;
+                        position: relative;
+                        top: -100%;
+                    }
+.fotos{
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	padding: 0 5px;	
+}
 /*
 
 Codehighlighting

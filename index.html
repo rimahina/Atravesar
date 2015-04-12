@@ -1,216 +1,155 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8"> 
-	<title>Atravesar</title>
+<meta charset="utf-8"> 
+<title>Atravesar</title>
 
-	<link rel="stylesheet" href="css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/examples.css" type="text/css">
+<link rel="stylesheet" href="css/normalize.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/examples.css" type="text/css">
 
-	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
-	<script type="text/javascript" src="js/lib/highlight.pack.js"></script>
-	<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
-	<script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
-	<script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
-  	<script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+<script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 
 </head>
 <body>
-	<div id="content-wrapper">
-        
-			<div class="scrollContent">
-               
-				
-					<script>
-						// init controller
-						var controller = new ScrollMagic.Controller();
-					</script>
-            <div class="tituloAtras">
-						<h1>Atravesar</h1>
-                        
-                        <img src= "img/diagramaavion.jpg" class="fototitulo"/>
-						</div>
-					</div>
-			
-				<section class="demo">
-					<style type="text/css">
-						.parallaxParent {
-							height: 100vh;
-							overflow: hidden;
-						}
-						.parallaxParent > * {
-							height: 200%;
-							width:100%;
-							position: relative;
-							top: -100%;
-						}
-					</style>
-					
-					<div id="parallax1" class="parallaxParent">
-                    
-						<div style="background-image: url(img/1.JPG);background-size:cover""></div>
-					</div>
-                    
-                    
-					<div class="texto">
-    
-				<section class="demo">
-					<div id="trigger2"></div>
-                    <div id="trigger5"></div>
-					<div id="animate2" class="box1"></div>
-                    
-                
-					<script>
-						// set start offset
-						TweenMax.set("#animate2", {left: "-=75%"});
-						// build tween
-						var tween = new TimelineMax()
-							.to("#animate2", 3, {top: "+=300",left: "+=145%",});
-														
-							
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
-										.setTween(tween)
-										.addIndicators({name: "timeline"}) // add indicators (requires plugin)
-										.addTo(controller);
-
-						
-					</script></section>
-		
-                         <p>Este proyecto, elaborado junto con Natali Brzoza Szwarcman, Eleni Liaskou, y Ana Wika, forma parte de la exposición Casos Favorables >>> Casos Posibles en la que se nos daba la oportunidad de trabajar en cualquiera de las salas del Palacio Ducal de Gandía. </p>
-                         <center><iframe src="https://player.vimeo.com/video/84985257?autoplay=1color=ff0179&title=0&portrait=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
-                         <p>Existe en el palacio una sala que no es transitable, la sala de las águilas, que sólo puede verse desde sus dos extremos. Con este proyecto quisimos hacer que los visitantes pudieran de alguna manera atravesar la sala volando. Introdujimos en la sala un gran marco que no desentonara con el resto de la estancia, y ofrecimos al público visitante unos cuantos aviones de papel. Con estos dos formamos un juego en el que se incitaba a hacer diana en el marco para conseguir un efecto luminoso en la sala a modo de recompensa para quien lo consiguiera. De esta manera esta sala volvía a cobrar vida, y se inundaba de huellas de la gente, esta vez a modo de manto de aviones de papel.</p>
-                         <p>Queríamos que el resultado final tuviera ese aspecto inocente y elegante que le dan los globos blancos a cualquier sala donde se instale Scattered Crowd de William Forsythe. De hecho inicialmente planteamos lanzar globos, pero era poco realista. También pensamos en pompas de jabón, como las burbujas digitales que se general al soplar en Cale aux bulles de Joelle Aeschlimann, Pauline Saglio y Mathieu Rivier. </p>
-                              
-                              </div>
-                    
-					
-					<div id="parallax2" class="parallaxParent">
-						<div style="background-image: url(img/2.JPG); background-size:cover"></div>
-					</div>
-                    
-					<div class="texto">
-                    <div id="trigger6"></div>
-                     <p>Pusimos en uno de los extremos de la sala un gran número de aviones de papel con los que poder atravesarla de forma simbólica, y dejar huella en ella. La idea era hacer una propuesta moderna y juguetona cuyo fisonomía conjuntara de forma amable con el entorno en el que se encontraba. </p>
-                     <p>La pieza consta de un marco, como si del de un espejo de pie se tratara, adornado con material de desecho pintado de dorado, haciendo la ilusión de formar piezas de adorno barrocas. (Esta idea la tomamos de la pieza de nuestra compañera Zuzana Hegedusová, que decoró una de las puertas del palacio de este modo) el marco colocado en el centro de la sala reacciona cada vez que uno de los aviones de papel que es lanzado atraviesa su interior. </p>
-                         <section class="demo">
-					<div id="animate1">
-						<center><br>
-                        <a target="_blank" href="img/inau.jpg" onClick="window.open(this.href, this.target, 'width=400,height=400')"><img src="img/chicos.png"/> </a>
-                        <a target="_blank" href="img/marco.jpg" onClick="window.open(this.href, this.target, 'width=400,height=400')"><img src="img/marco.png"/> </a>
-                        <a target="_blank" href="img/1601510_810160035676251_1153457621_n.jpg" onClick="window.open(this.href, this.target, 'width=960,height=640')"><img src="img/parado.png"/> </a>
-                        <a target="_blank" href="img/1609602_809300312428890_1449043563_n.jpg" onClick="window.open(this.href, this.target, 'width=960,height=640')"><img src="img/pieza.png"/> </a>
-                        <a target="_blank"  href="img/1625623_810159865676268_1918494467_n.jpg" onClick="window.open(this.href, this.target, 'width=960,height=640')"><img src="img/profe.png"/> </a>
-						<a target="_blank" href="img/aviones.jpg" onClick="window.open(this.href, this.target, 'width=400,height=400')"><img src="img/aviones.png"/></a>
-                        <br></center>
-                 
-					</div>
-
-                    
-                    <div id="trigger7"></div>
-					<script>
-							// build scene
-							var scene = new ScrollMagic.Scene({
-												triggerElement: "#trigger5"
-											})
-											.setTween("#animate1", 0.5, { scale: 0.5})
-																						 // trigger a TweenMax.to tween
-											.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-											.addTo(controller);
-											
-											var scene = new ScrollMagic.Scene({
-												triggerElement: "#trigger6"
-											})
-											.setTween("#animate1", 0.5, { scale: 0.8})
-																						 // trigger a TweenMax.to tween
-											.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-											.addTo(controller);
-											
-											
-					</script>
-				</section>
-                  
-                      <p>El marco, en su parte superior, lleva instalado un sensor de infrarrojos que detectaría la presencia de cualquier cosa que pase por su interior. Este sensor a su vez está conectado a una placa Arduino que recoge la señal y la envía a los diodos LEDs repartidos por todo el marco, y generando con ellos un pequeño juego de luces.</p>
-                      <p>Los aviones se encuentran dispuestos en una mesa con las instrucciones del juego propuesto, dentro de una caja dorada, del mismo estilo que el marco.</p>
-                                   
-                                         </div>
-					
-					
-					<div id="parallax3" class="parallaxParent">
-						<div style="background-image: url(img/3.JPG);background-size:cover"></div>
-					</div>
-                    
-                  <div class="texto">
-                  
-                  <section class="demo">
-					  <div id="trigger3"></div>
-					<div id="animate3" class="box2"></div>
-                    
-                
-					<script>
-						// set start offset
-						TweenMax.set("#animate3", {left: "+=75%"});
-						// build tween
-						var tween = new TimelineMax()
-							.to("#animate3", 4, {top: "+=250",left: "-=145%",});
-														
-							
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger3"})
-										.setTween(tween)
-										.addIndicators({name: "timeline"}) // add indicators (requires plugin)
-										.addTo(controller);
-
-						
-					</script></section>
-
-<p>Por una parte debíamos construir un marco hueco con patas que se mantuviera de pie sin problemas, se montara y se transportara sin mucha dificultad y fuera igual de vistoso por ambos lados. La arquitecta del equipo, Natalie, diseñó la estructura. Posteriormente hicimos los adornos con vasos de plástico, cajas de cereales, bolsas, tapones de botellas, etc. uniéndolos con silicona y deformándolos con pistolas de calor, después los pegamos sobre los listones del marco y los pintamos con espray dorado. </p>
-
-<p>Mientras debíamos montar el circuito que repartía todos los diodos LED a lo largo del marco y los conectaba con el Arduino, y a este con el sensor. Estaban montados en tiras igual de largas que los listones, para poder colocarlos en medio en el momento del montaje.</p>
-
-                
-                
-<p>También en paralelo debía de hacerse el trabajo de programación, la placa de Arduino debía de contener un código que estuviera alerta de los datos que recogiera el sensor y diera la señal a los LED cuando tuvieran que lucir. </p>
-
-<p>Existe una pieza de ART+COM, Duality en la que al pasar por un puente generas ondas en el agua que atraviesa, como si anduvieses por el agua, nosotras buscábamos ese mismo dejar huella por donde realmente no hemos estado. Y una interacción divertida con el espacio, como la que genera Human Allergy de Hugo Martínez Torno al estornudar cuando alguien pasa por delante. Con un objeto familiar, lo bueno del avión de papel es que raro es encontrar a alguien que nunca haya hecho alguno, y se dan muchos los casos de personas que tienen una forma peculiar de hacerlos, que identifican con sigo mismas.</p>
-             	</div>
-
-					<div id="parallax4" class="parallaxParent">
-						<div style="background-image: url(img/4.JPG);background-size:cover"></div>
-					</div>
-                    
-                    <div class="texto" style="margin-bottom:100px;">
-                    	<p>Al principio dudamos si la gente que pasara por allí se pararía a leer las instrucciones de nuestro juego, o si se pararía a lanzar un avión.  Pero durante el montaje no fueron pocos los visitantes que al ver el marco allí y el montón de papeles, ya intentaron acertar en la diana. Una vez montado lo probamos con algunos miembros del personal del museo, que se mostró muy participativo. Y los pocos aviones que quedaron como rastro de aquellas pruebas resultaron ser suficiente como instrucciones para la gente que llego a la inauguración. Antes y mientras explicábamos la pieza, ya había gente lanzando aviones, y pude ir unas cuantas veces más y comprobar que cada vez el suelo estaba más blanco, incluso había gente que firmaba el avión antes de lanzarlo.</p>
-						<center><img src="img/palacio.png"/></center>
+<div id="content-wrapper">
+        <div class="scrollContent">
+        <div class="tituloAtras">
+                    <h1>Atravesar</h1>
+                    <img src= "img/diagramaavion.jpg" class="fototitulo"/>
                     </div>
-                  				
-					
-					</div>		</section>
-					
-					<script>
-						// init controller
-						var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+             
+        
+          	  <section class="demo">
+            
+                <div id="parallax1" class="parallaxParent">
+                    <div style="background-image: url(img/1.JPG);background-size:cover""></div>
+                </div>
 
-						// build scenes
-						new ScrollMagic.Scene({triggerElement: "#parallax1"})
-										.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
-										.addTo(controller);
+                <div id="lanzaavion1"></div>
+                <div id="avion" class="box1"></div>
+                
+    				 <div class="texto">
+                     <p>Este proyecto, elaborado junto con Natali Brzoza Szwarcman, Eleni Liaskou, y Ana Wika, forma parte de la exposición Casos Favorables >>> Casos Posibles en la que se nos daba la oportunidad de trabajar en cualquiera de las salas del Palacio Ducal de Gandía. </p>
+                     <center><iframe src="https://player.vimeo.com/video/84985257?autoplay=1color=ff0179&title=0&portrait=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+                     <p>Existe en el palacio una sala que no es transitable, la sala de las águilas, que sólo puede verse desde sus dos extremos. Con este proyecto quisimos hacer que los visitantes pudieran de alguna manera atravesar la sala volando. Introdujimos en la sala un gran marco que no desentonara con el resto de la estancia, y ofrecimos al público visitante unos cuantos aviones de papel. Con estos dos formamos un juego en el que se incitaba a hacer diana en el marco para conseguir un efecto luminoso en la sala a modo de recompensa para quien lo consiguiera. De esta manera esta sala volvía a cobrar vida, y se inundaba de huellas de la gente, esta vez a modo de manto de aviones de papel.</p>
+                     <p>Queríamos que el resultado final tuviera ese aspecto inocente y elegante que le dan los globos blancos a cualquier sala donde se instale Scattered Crowd de William Forsythe. De hecho inicialmente planteamos lanzar globos, pero era poco realista. También pensamos en pompas de jabón, como las burbujas digitales que se general al soplar en Cale aux bulles de Joelle Aeschlimann, Pauline Saglio y Mathieu Rivier. </p>
+                 	 </div>
+                
+                
+                <div id="parallax2" class="parallaxParent">
+                <div style="background-image: url(img/2.JPG); background-size:cover"></div>
+                </div>
+                
+                <div id="animafotos"></div>
+               
+                 <div class="texto">
+                 <p>Pusimos en uno de los extremos de la sala un gran número de aviones de papel con los que poder atravesarla de forma simbólica, y dejar huella en ella. La idea era hacer una propuesta moderna y juguetona cuyo fisonomía conjuntara de forma amable con el entorno en el que se encontraba. </p>
+                 <p>La pieza consta de un marco, como si del de un espejo de pie se tratara, adornado con material de desecho pintado de dorado, haciendo la ilusión de formar piezas de adorno barrocas. (Esta idea la tomamos de la pieza de nuestra compañera Zuzana Hegedusová, que decoró una de las puertas del palacio de este modo) el marco colocado en el centro de la sala reacciona cada vez que uno de los aviones de papel que es lanzado atraviesa su interior. </p>
+                 
+              
+                 <center>
+                 
+                    <div id="fotos1" class="fotos"><a target="_blank" href="img/inau.jpg" onClick="window.open(this.href, this.target, 'width=400,height=400')"><img src="img/chicos.png"/> </a> </div>
+                   	<div id="fotos2" class="fotos"><a target="_blank" href="img/marco.jpg" onClick="window.open(this.href, this.target, 'width=400,height=400')"><img src="img/marco.png"/> </a> </div>
+                    <div id="fotos3" class="fotos"><a target="_blank" href="img/1601510_810160035676251_1153457621_n.jpg" onClick="window.open(this.href, this.target, 'width=960,height=640')"><img src="img/parado.png"/> </a> </div>
+                    <div id="fotos4" class="fotos"><a target="_blank" href="img/1609602_809300312428890_1449043563_n.jpg" onClick="window.open(this.href, this.target, 'width=960,height=640')"><img src="img/pieza.png"/> </a> </div>
+                    <div id="fotos5" class="fotos"><a target="_blank"  href="img/1625623_810159865676268_1918494467_n.jpg" onClick="window.open(this.href, this.target, 'width=960,height=640')"><img src="img/profe.png"/> </a> </div>
+                    <div id="fotos6" class="fotos"><a target="_blank" href="img/aviones.jpg" onClick="window.open(this.href, this.target, 'width=400,height=400')"><img src="img/aviones.png"/></a> </div>
+           
+                </center>
+               
+                
+                <div id="trigger7"></div>
+             
+                 <p>El marco, en su parte superior, lleva instalado un sensor de infrarrojos que detectaría la presencia de cualquier cosa que pase por su interior. Este sensor a su vez está conectado a una placa Arduino que recoge la señal y la envía a los diodos LEDs repartidos por todo el marco, y generando con ellos un pequeño juego de luces.</p>
+                 <p>Los aviones se encuentran dispuestos en una mesa con las instrucciones del juego propuesto, dentro de una caja dorada, del mismo estilo que el marco.</p>
+                               
+                </div>
+                
+                
+                <div id="parallax3" class="parallaxParent">
+                    <div style="background-image: url(img/3.JPG);background-size:cover"></div>
+                </div>
+                
+         
+             	 
+              	 <div id="lanzaavion2"></div>
+              	 <div id="avion2" class="box2"></div>
+              	
+              
+                <div class="texto">             
+                <p>Por una parte debíamos construir un marco hueco con patas que se mantuviera de pie sin problemas, se montara y se transportara sin mucha dificultad y fuera igual de vistoso por ambos lados. La arquitecta del equipo, Natalie, diseñó la estructura. Posteriormente hicimos los adornos con vasos de plástico, cajas de cereales, bolsas, tapones de botellas, etc. uniéndolos con silicona y deformándolos con pistolas de calor, después los pegamos sobre los listones del marco y los pintamos con espray dorado. </p>
+                <p>Mientras debíamos montar el circuito que repartía todos los diodos LED a lo largo del marco y los conectaba con el Arduino, y a este con el sensor. Estaban montados en tiras igual de largas que los listones, para poder colocarlos en medio en el momento del montaje.</p>          
+                <p>También en paralelo debía de hacerse el trabajo de programación, la placa de Arduino debía de contener un código que estuviera alerta de los datos que recogiera el sensor y diera la señal a los LED cuando tuvieran que lucir. </p>
+                <p>Existe una pieza de ART+COM, Duality en la que al pasar por un puente generas ondas en el agua que atraviesa, como si anduvieses por el agua, nosotras buscábamos ese mismo dejar huella por donde realmente no hemos estado. Y una interacción divertida con el espacio, como la que genera Human Allergy de Hugo Martínez Torno al estornudar cuando alguien pasa por delante. Con un objeto familiar, lo bueno del avión de papel es que raro es encontrar a alguien que nunca haya hecho alguno, y se dan muchos los casos de personas que tienen una forma peculiar de hacerlos, que identifican con sigo mismas.</p>
+                </div>
 
-						new ScrollMagic.Scene({triggerElement: "#parallax2"})
-										.setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
-										.addTo(controller);
-
-						new ScrollMagic.Scene({triggerElement: "#parallax3"})
-										.setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
-										.addTo(controller);
-										
-						new ScrollMagic.Scene({triggerElement: "#parallax4"})
-										.setTween("#parallax4 > div", {y: "80%", ease: Linear.easeNone})
-										.addTo(controller);
-										
-					</script>
-		
+                <div id="parallax4" class="parallaxParent">
+                    <div style="background-image: url(img/4.JPG);background-size:cover"></div>
+                </div>
+                
+                <div class="texto" style="margin-bottom:100px;">
+                <p>Al principio dudamos si la gente que pasara por allí se pararía a leer las instrucciones de nuestro juego, o si se pararía a lanzar un avión.  Pero durante el montaje no fueron pocos los visitantes que al ver el marco allí y el montón de papeles, ya intentaron acertar en la diana. Una vez montado lo probamos con algunos miembros del personal del museo, que se mostró muy participativo. Y los pocos aviones que quedaron como rastro de aquellas pruebas resultaron ser suficiente como instrucciones para la gente que llego a la inauguración. Antes y mientras explicábamos la pieza, ya había gente lanzando aviones, y pude ir unas cuantas veces más y comprobar que cada vez el suelo estaba más blanco, incluso había gente que firmaba el avión antes de lanzarlo.</p>
+                <center><img src="img/palacio.png"/></center>
+                </div>
+                </section>
 			</div>
-		</div>
-	</div>
+        </div>
+    </div>
+    
+    <script>			   
+var controller = new ScrollMagic.Controller();
+var controller2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+//primer avión
+	          
+TweenMax.set("#avion", {left: "-=40%", top: "+=30"});				
+var tween = new TweenMax.to("#avion", 3, {top: "+=300",left: "+=80%",ease:Circ.easeOut});	
+																			
+var scene = new ScrollMagic.Scene({triggerElement: "#lanzaavion1"})
+	.setTween(tween)
+	.addTo(controller);
+
+//para las fotos
+	TweenMax.staggerTo([fotos1, fotos2, fotos3, fotos4, fotos5, fotos6], 1, {scale:0.1, opacity:0.1}, 0);
+	var tween = new TweenMax.staggerTo([fotos1, fotos2, fotos3, fotos4, fotos5, fotos6], 1, {scale:1, opacity:1}, 0.25); //para darle un nomre distinto a cada elemento...
+	
+	var scene = new ScrollMagic.Scene({triggerElement: "#animafotos"})
+	.setTween(tween)
+	.addTo(controller);										
+
+//primer avión
+	          
+TweenMax.set("#avion2", {left: "+=40%", top: "-=30"});				
+var tween = new TweenMax.to("#avion2", 3, {top: "-=300",left: "-=80%",ease:Circ.easeOut});	
+																			
+var scene = new ScrollMagic.Scene({triggerElement: "#lanzaavion2"})
+	.setTween(tween)
+	.addTo(controller);
+	
+	
+//Fotos borrosas
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#parallax1"})
+					.setTween("#parallax1 > div", {y: "100%", ease: Linear.easeNone})
+					.addTo(controller2);
+
+	new ScrollMagic.Scene({triggerElement: "#parallax2"})
+					.setTween("#parallax2 > div", {y: "100%", ease: Linear.easeNone})
+					.addTo(controller2);
+
+	new ScrollMagic.Scene({triggerElement: "#parallax3"})
+					.setTween("#parallax3 > div", {y: "100%", ease: Linear.easeNone})
+					.addTo(controller2);
+					
+	new ScrollMagic.Scene({triggerElement: "#parallax4"})
+					.setTween("#parallax4 > div", {y: "100%", ease: Linear.easeNone})
+					.addTo(controller2);
+					</script>
 </body>
 </html>
